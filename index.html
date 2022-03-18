@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="m-auto w-75 py-4">
+        <div class="form-group">
+            <label for="productName">productName: </label>
+            <input type="text" class="form-control" id="productName">
+        </div>
+
+        <div class="form-group">
+            <label for="productPrice">productPrice: </label>
+            <input type="number" class="form-control" id="productPrice">
+        </div>
+
+        <div class="form-group">
+            <label for="productCategory">productCategory: </label>
+            <input type="text" class="form-control" id="productCategory">
+        </div>
+
+        <div class="form-group">
+            <label for="productDescription">productDescription: </label>
+            <textarea type="text" class="form-control" id="productDescription"> </textarea>
+        </div>
+
+        <button id="mainBtn" onclick="addProduct();" class="btn btn-outline-info ">add product</button>
+    </div>
+
+    <div class="m-auto w-75 py-3">
+        <input onkeyup="searchProduct(this.value)" type="text" class="form-control w-75 m-auto" placeholder="Search product">
+
+        <table class="table my-4 text-center">
+            <thead>
+                <th>Index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDesc</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead>
+
+            <tbody id="tableBody">
+                
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
